@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container{
-  @apply w-[20%] m-[auto] bg-linen
+  @apply w-[70%] m-[auto] bg-linen
 }
 ul li{
   @apply flex justify-between bg-white my-4 p-1
