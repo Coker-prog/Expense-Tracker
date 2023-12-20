@@ -1,11 +1,9 @@
-import React from 'react'
-
 const Balalnce = () => {
   return (
-    <React.Fragment>
+    <div className="mb-4 text-2xl">
         <h4>Your Blance </h4>
         <h1>$0 .00</h1>
-    </React.Fragment>
+    </div>
   )
 }
 
