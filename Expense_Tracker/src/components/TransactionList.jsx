@@ -24,9 +24,9 @@ const TransactionList = () => {
       <h3 className="pb-2">History</h3>
       <hr />
       <ul>
-        {datas.map((data) => (
+        {datas && datas.map((data) => (
           <div className="preview" key={data.id}>
-            <Transaction datas={data} />
+            <Transaction data={data}  />
           </div>
         ))}
       </ul>
