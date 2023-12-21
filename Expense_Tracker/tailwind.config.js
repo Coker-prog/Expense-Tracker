@@ -8,7 +8,9 @@ export default {
     extend: {
       colors:{
         floralWhite: "#FFFDDO",
-        linen:"#FAF0E6"
+        linen:"#FAF0E6",
+        lightGreen: "#2ecc71",
+        lightRed: "#c0392b"
       }
     },
   },

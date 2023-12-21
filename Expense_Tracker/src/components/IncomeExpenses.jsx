@@ -5,7 +5,7 @@ const IncomeExpenses = () => {
             <h4>Income</h4>
             <p>+0.00</p>
         </div>
-        <div className="bg-floralWhite w-1 h-7"></div>
+        <div className="bg-red-900 w-1 h-9"></div>
         <div className="">
             <h4>Expense</h4>
             <p>-$0.00</p>

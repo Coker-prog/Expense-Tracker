@@ -8,3 +8,9 @@
 ul li{
   @apply flex justify-between bg-white my-4 p-1
 }
+.minus{
+  @apply bg-lightRed
+} 
+.plus{
+  @apply bg-lightGreen
+}
