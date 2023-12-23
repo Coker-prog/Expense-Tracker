@@ -5,17 +5,14 @@ import Transaction from "./Transaction";
 
 const TransactionList = () => {
   const { datas } = useSelector((state) => state.expenseSlice);
-  console.log(datas);
   const dispatch = useDispatch();
 
   useEffect(() => {
     fetch("http://localhost:3000/datas")
       .then((res) => {
-        console.log(res);
         return res.json();
       })
       .then((res) => {
-        console.log(res);
         dispatch(fetch_datas(res));
       });
   }, [dispatch]);
@@ -24,11 +21,12 @@ const TransactionList = () => {
       <h3 className="pb-2">History</h3>
       <hr />
       <ul>
-        {datas && datas.map((data) => (
-          <div className="preview" key={data.id}>
-            <Transaction data={data}  />
-          </div>
-        ))}
+        {datas &&
+          datas.map((data) => (
+            <div className="preview" key={data.id}>
+              <Transaction data={data} />
+            </div>
+          ))}
       </ul>
     </div>
   );
