@@ -6,7 +6,7 @@
   @apply w-[70%] m-[auto] bg-linen
 }
 ul li{
-  @apply flex justify-between bg-white my-4 p-1
+  @apply flex justify-between  bg-white my-4 p-1  w-full
 }
 .minus{
   @apply bg-lightRed
