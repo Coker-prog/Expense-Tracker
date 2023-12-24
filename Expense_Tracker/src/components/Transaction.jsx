@@ -14,8 +14,9 @@ const Transaction = (data) => {
     fetch("http://localhost:3000/datas/" + id,{
       method: "DELETE",
     })
-    .then(() => {
-      return dispatch(delete_datas(data.id));
+    .then((res) => {
+      console.log(res)
+      return dispatch(delete_datas(res.id));
     });
   };
 

@@ -16,6 +16,8 @@ const TransactionList = () => {
         dispatch(fetch_datas(res));
       });
   }, [dispatch]);
+
+  
   return (
     <div className="my-5">
       <h3 className="pb-2">History</h3>

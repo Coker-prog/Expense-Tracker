@@ -17,16 +17,22 @@ export const expenseSlice  = createSlice({
     },
     delete_datas: function (state, action) {
       console.log(state)
-      console.log(action)
+      console.log(action.payload)
       return{
-        ...state,
-        datas: state.datas.filter((data) => data.id !== action.payload)
+        ...state, datas: state.datas.filter(data => data.id != action.payload)
+      }
+    },
+    create_datas: (state, action) => {
+      console.log(state)
+      console.log(action.payload)
+      return{
+        ...state, datas: [action.payload, ...state.datas]
       }
     }
     }
 })
 
 // Action creators are generated for each case reducer function
-export const { fetch_datas, delete_datas } = expenseSlice.actions
+export const { fetch_datas, delete_datas, create_datas } = expenseSlice.actions
 
 export default expenseSlice.reducer
