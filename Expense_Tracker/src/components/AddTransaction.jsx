@@ -11,7 +11,8 @@ const AddTransaction = () => {
   const submit = (e) => {
     e.preventDefault()
 
-    const data = {amount, text}
+    const data = {amount: +amount, 
+       text}
     console.log(data)
     fetch('  http://localhost:3000/datas',{
       method: 'POST',

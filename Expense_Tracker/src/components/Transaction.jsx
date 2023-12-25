@@ -22,7 +22,7 @@ const Transaction = (data) => {
 
   return (
     <>
-      <div className="flex items-center">
+      <div id="output"  className="flex items-center">
         <MdCancel onClick={handleDelte} />
         <li className={data.data.amount < 0 ? "minus" : "plus"}>
           {data.data.text}

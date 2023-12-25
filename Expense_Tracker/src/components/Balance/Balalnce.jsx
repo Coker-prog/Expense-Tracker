@@ -5,7 +5,7 @@ const Balalnce = () => {
 
   const amounts = datas.map((data) => data.amount);
   const sum = amounts.reduce((sum, amounts) => {
-    return (sum += amounts);
+    return (sum + amounts);
   }, 0);
   
   return (

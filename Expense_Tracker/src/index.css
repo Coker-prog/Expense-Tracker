@@ -2,15 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* *{
+  background-color: #f7f7f7;
+} */
 .container{
-  @apply w-[70%] m-[auto]
+  @apply w-[70%] m-[auto] bg-linen
 }
 ul li{
   @apply flex justify-between  bg-white my-4 p-1  w-full
 }
-.minus{
+/* .minus{
   @apply bg-lightRed
-} 
-.plus{
+}  */
+/* .plus{
   @apply bg-lightGreen
+} */
+#output{
+ 
+  box-shadow:  20px 20px 20px #f7f7f7;
+}
+#expense{
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #888888;
 }
